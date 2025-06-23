@@ -1,0 +1,33 @@
+{
+	"name": "vue",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview",
+		"lint": "npx @biomejs/biome lint --write ./src",
+		"format": "npx @biomejs/biome format --write ./src",
+		"format:check": "npx @biomejs/biome check --reporter=summary"
+	},
+	"dependencies": {
+		"appwrite": "^18.1.1",
+		"autoprefixer": "^10.4.21",
+		"pinia": "^3.0.3",
+		"postcss": "^8.5.6",
+		"vue": "^3.5.13",
+		"vue-router": "^4.5.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.2",
+		"@tailwindcss/vite": "^4.1.10",
+		"@types/node": "^24.0.3",
+		"@vitejs/plugin-vue": "^5.2.3",
+		"@vue/tsconfig": "^0.7.0",
+		"tailwindcss": "^4.1.10",
+		"typescript": "~5.8.3",
+		"vite": "^6.3.5",
+		"vue-tsc": "^2.2.8"
+	}
+}
